@@ -23,7 +23,10 @@ def Book_a_seat():
     if a in Seat is False:#If a is invalid
         print("Please enter a vaild seat number")
     elif a in Seat is True and b=='F':#a is valid and is an available seat
-        Seat1[a]='R'#change the value of chosen seat
+        h=input('please enter your passport number ')
+        j=input('please enter your  first name')
+        k=input('please enter your last name')
+        Seat1[a]='h'+'j'+'k',a#change the value of chosen seat
         print('You have successfully booked'+a)
     elif a in Seat is True and b=='R':#a is valid but is an unavailable seat
         print('Sorry, this seat is unavailable')
